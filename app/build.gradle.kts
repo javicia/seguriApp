@@ -55,6 +55,7 @@ kapt {
 }
 dependencies {
 
+    implementation(libs.androidx.material3.android)
     val hiltVersion = "2.45"
     val Room = "2.6.1"
     val navVersion = "2.5.3"
@@ -101,7 +102,7 @@ dependencies {
     implementation(libs.firebase.storage)
 
     //Analytics
-    implementation ("com.google.firebase:firebase-analytics-ktx:21.6.2")
+    implementation (libs.firebase.analytics.ktx)
 
 
     // Dependency for Firebase Android 11
@@ -110,11 +111,11 @@ dependencies {
     //Coroutines - Firebase
     implementation (libs.kotlinx.coroutines.play.services)
 
-    //Gson
-    implementation (libs.gson)
+    //Material
+    implementation (libs.androidx.material)
+    implementation (libs.material3)
 
-    //shimmer
-    implementation (libs.shimmer)
+
 
     //Test
     testImplementation(libs.junit)

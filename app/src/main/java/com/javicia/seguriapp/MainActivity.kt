@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.javicia.seguriapp.navigation.AppNavigation
+import com.javicia.seguriapp.presentation.main.MainScreen
 import com.javicia.seguriapp.ui.theme.SeguriAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    AppNavigation()
+                    MainScreen()
                 }
             }
         }
